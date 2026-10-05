@@ -5,3 +5,4 @@ kitty
 sway
 i3status
 rofi
+fish
