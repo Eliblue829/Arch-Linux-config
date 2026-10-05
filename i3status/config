@@ -1,0 +1,50 @@
+general {
+        colors = true
+        interval = 10
+        color_good = "#A3BE8C"      # 정상 상태 색상 (연두색/녹색)
+        color_degraded = "#EBCB8B"  # 주의 상태 색상 (노란색)
+        color_bad = "#BF616A"       # 경고 상태 색상 (빨간색)
+}
+
+# 이미지에 나온 오른쪽 정보 순서대로 배치
+order += "disk /"
+order += "memory"
+order += "load"
+order += "volume master"
+order += "tztime date"
+order += "tztime time"
+
+# 2. 디스크 남은 용량 (💾 아이콘 사용)
+disk "/" {
+        format = " 󰋊 %avail"
+}
+
+# 3. 메모리 사용량 (⚙️ 또는 🐏 아이콘 사용)
+memory {
+        format = " 󰍛 %used"
+        threshold_degraded = "10%"
+        format_degraded = "MEMORY: %free"
+}
+
+# 4. CPU 로드 평균
+load {
+        format = " 󱐋 %1min"
+}
+
+# 🔊 흑백 너드폰트 오디오 아이콘 적용된 볼륨 설정
+volume master {
+        format = "    %volume"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+# 6. 날짜 설정 (📅 아이콘 사용)
+tztime date {
+        format = "  %Y-%m-%d"
+}
+
+# 7. 시간 설정 (🕒 아이콘 사용)
+tztime time {
+        format = " 󰥔 %I:%M %p"
+}
