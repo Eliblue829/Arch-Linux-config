@@ -7,4 +7,5 @@ i3status
 rofi
 fish
 JetBrains Mono Nerd
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2e708b07-dfb6-4e9b-9889-6b773b7c2f8a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8319057d-867c-4c50-a91e-86c8151e9c94" />
+
