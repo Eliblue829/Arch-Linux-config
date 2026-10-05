@@ -6,3 +6,4 @@ sway
 i3status
 rofi
 fish
+JetBrains Mono Nerd
