@@ -20,7 +20,7 @@ ttf-jetbrains-mono-nerd
 
 thunar
 
-kitty
+alacritty
 
 fcitx5
 
