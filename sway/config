@@ -10,7 +10,7 @@ set $up k
 set $right l
 # Home row direction keys, like vim
 # Your preferred terminal emulator
-set $term kitty
+set $term alacritty
 # Your preferred application launcher
 set $menu rofi -show drun
 set $browser firefox
@@ -226,11 +226,13 @@ bindsym button5 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 
     colors {
         # 배경색
-        background #1e1e24
+        background #333333
         # 텍스트 색상
-        statusline #cbd5e1
+        statusline #ffffff
         # 구분선 색상
-        separator  #475569
+        separator  #666666
+        # 아치리눅스 로고 색상
+        focused_workspace     #1793D1   #1793D1   #FFFFFF
     }
 }
 
