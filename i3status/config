@@ -9,7 +9,7 @@ general {
 # 이미지에 나온 오른쪽 정보 순서대로 배치
 order += "disk /"
 order += "memory"
-order += "load"
+order += "cpu_usage"
 order += "volume master"
 order += "tztime date"
 order += "tztime time"
@@ -19,21 +19,21 @@ disk "/" {
         format = " 󰋊 %avail"
 }
 
-# 3. 메모리 사용량 (⚙️ 또는 🐏 아이콘 사용)
+# 3. 메모리 사용량
 memory {
-        format = " 󰍛 %used"
+        format = " 󰍛 %percentage_used"
         threshold_degraded = "10%"
-        format_degraded = "MEMORY: %free"
+        format_degraded = "MEMORY: %percentage_free"
 }
 
 # 4. CPU 로드 평균
-load {
-        format = " 󱐋 %1min"
+cpu_usage {
+        format = " 󱐋 %usage"
 }
 
 # 🔊 흑백 너드폰트 오디오 아이콘 적용된 볼륨 설정
 volume master {
-        format = "    %volume"
+        format = "   %volume"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
