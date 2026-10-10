@@ -1,5 +1,5 @@
 
-output "*" bg "/home/dani/Downloads/BuggedFun.jpg" fill
+output "*" bg "/home/dani/Downloads/mokyu.jpg" fill
 
 
 # Logo key. Use Mod1 for Alt.
@@ -143,7 +143,7 @@ output HDMI-A-1 mode 1920x1080@75.003Hz
     # bindsym $mod+s layout stacking
     # bindsym $mod+w layout tabbed
     # bindsym $mod+e layout toggle split
-    bindsym Mod4+e exec thunar
+    bindsym Mod4+e exec dolphin
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -210,15 +210,15 @@ mode "resize" {
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
+
+exec_always "/usr/lib/polkit-kde-authentication-agent-1 &"
 exec_always "fcitx5 -d"
-# Sway 시작 시 mako 알림 데몬 실행
-# DBus에게 현재 그래픽 환경 변수(Wayland 디스플레이 등)를 업데이트하고 mako 실행
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec mako
+
+
 bar {
-font pango:JetBrainsMono Nerd Font 15
+font pango:JetBrainsMono Nerd Font 12
 status_command i3status
-position top
+#position top
 separator_symbol " | "
 
 bindsym button4 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
@@ -226,14 +226,14 @@ bindsym button5 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 
     colors {
         # 배경색
-        background #333333
+        background #000000
         # 텍스트 색상
         statusline #ffffff
         # 구분선 색상
         separator  #666666
         # 아치리눅스 로고 색상
         focused_workspace     #1793D1   #1793D1   #FFFFFF
-    }
+   }
 }
 
 input "5426:138:Razer_Razer_Viper_Mini" {
@@ -248,7 +248,7 @@ bindsym Ctrl+Alt+Delete exec systemctl poweroff
 default_border pixel 5
 
 # 창과 창 사이의 간격 (픽셀 단위)
-gaps inner 10
+gaps inner 5
 
 # 창과 화면 테두리 사이의 간격
 gaps outer 5
