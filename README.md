@@ -4,6 +4,8 @@ sway
 
 swaybg
 
+dbus
+
 xdg-desktop-portal-wlr 
 
 xorg-xwayland
