@@ -4,29 +4,34 @@ sway
 
 swaybg
 
-grim
+xdg-desktop-portal-wlr 
 
-slurp
+zram-generator
 
-wl-clipboard
+grim slurp wl-clipboard
 
 i3status
 
-rofi
+wofi
 
-fish
-
-ttf-jetbrains-mono-nerd
-
-thunar
+thunar gvfs 
 
 alacritty
 
-fcitx5
+fcitx5 fcitx5-configtool fcitx5-hangul
+
+gamescope
+
+gnome-software gnome-text-editor
+
+polkit-gnome 
+
+timeshift
 
 noto-fonts-cjk
 
 neovim
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8319057d-867c-4c50-a91e-86c8151e9c94" />
+btop
+
 
