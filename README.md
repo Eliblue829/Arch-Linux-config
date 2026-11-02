@@ -4,6 +4,8 @@ sway
 
 swaybg
 
+waybar
+
 dbus
 
 xdg-desktop-portal-wlr 
@@ -18,7 +20,7 @@ wofi
 
 thunar gvfs 
 
-alacritty
+foot
 
 fcitx5 fcitx5-configtool fcitx5-hangul
 
