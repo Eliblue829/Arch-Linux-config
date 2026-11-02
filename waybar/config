@@ -1,0 +1,53 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    // 왼쪽/중앙/오른쪽 모듈 배치
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "cpu",
+        "memory",
+        "wireplumber",
+        "clock"
+    ],
+
+    // 모듈 세부 설정
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 2
+    },
+
+    "memory": {
+        "format": "RAM {percentage}%",
+        "interval": 5
+    },
+    
+    "wireplumber": {
+        "format": "VOL {volume}%",
+        "scroll-step": 5.0,    // 휠 1칸당 5%씩 조절
+        "max-volume": 100.0,  // 최대 볼륨 제한 (옵션)
+    },
+    
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    }
+}

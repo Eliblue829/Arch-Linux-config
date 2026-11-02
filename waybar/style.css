@@ -1,0 +1,63 @@
+/* 전깃값/기본 폰트 설정 */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Noto Sans CJK KR", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* 바 전체 배경 (투명감 있는 검은색) */
+window#waybar {
+    background-color: rgba(15, 15, 15, 0.95);
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 모듈 공통 여백 및 화이트 텍스트 */
+#workspaces,
+#mode,
+#clock,
+#cpu,
+#memory,
+#tray {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+/* --- 워크스페이스 스타일 --- */
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #777777; /* 비활성화 상태: 연한 회색 */
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+#workspaces button.focused {
+    color: #ffffff; /* 활성화 상태: 선명한 흰색 */
+    border-bottom: 2px solid #ffffff; /* 밑줄 포인트 */
+}
+
+#workspaces button.urgent {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+/* --- 오른쪽 모듈 세부 설정 --- */
+#cpu, #memory {
+    color: #ffffff;
+}
+
+#clock {
+    color: #ffffff;
+}
+
+#tray {
+    padding-right: 12px;
+}
