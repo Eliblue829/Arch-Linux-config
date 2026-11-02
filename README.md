@@ -6,6 +6,8 @@ swaybg
 
 xdg-desktop-portal-wlr 
 
+xorg-xwayland
+
 zram-generator
 
 grim slurp wl-clipboard
