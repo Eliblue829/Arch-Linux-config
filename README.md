@@ -12,8 +12,6 @@ zram-generator
 
 grim slurp wl-clipboard
 
-i3status
-
 wofi
 
 thunar gvfs 
