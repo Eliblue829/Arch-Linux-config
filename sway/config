@@ -132,8 +132,8 @@ output HDMI-A-1 mode 1920x1080@75.003Hz
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    # bindsym $mod+s layout stacking
+    # bindsym $mod+w layout tabbed
     # bindsym $mod+e layout toggle split
     bindsym Mod4+e exec thunar
     # Make the current focus fullscreen
