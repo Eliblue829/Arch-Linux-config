@@ -23,6 +23,10 @@ thunar gvfs
 foot
 
 fcitx5 fcitx5-configtool fcitx5-hangul
+sudo nvim /etc/environment
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
 
 gamescope
 
@@ -35,6 +39,10 @@ timeshift
 noto-fonts-cjk
 
 neovim
+
+ncdu
+
+yazi
 
 btop
 
