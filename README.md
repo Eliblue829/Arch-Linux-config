@@ -8,7 +8,10 @@ waybar
 
 dbus
 
-xdg-desktop-portal-wlr 
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
+
+nwg-look
 
 xorg-xwayland
 
