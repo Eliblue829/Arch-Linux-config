@@ -32,7 +32,9 @@ XMODIFIERS=@im=fcitx
 
 gamescope
 
-gnome-software gnome-text-editor
+gnome-software
+
+mousepad
 
 polkit-gnome 
 
