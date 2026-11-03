@@ -34,6 +34,7 @@ QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 
 gamescope
+gamescope -W 1920 -H 1080 -f -- %command%
 
 gnome-software
 
