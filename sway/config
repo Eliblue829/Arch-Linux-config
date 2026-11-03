@@ -229,6 +229,7 @@ gaps inner 5
 # 창과 화면 테두리 사이의 간격
 gaps outer 5
 # 현재 선택된 창
-client.focused #FFFFFF #FFFFFF #ffffff #FFFFFF #FFFFFF
+client.focused #FFFFFF #FFFFFF #FFFFFF #FFFFFF #FFFFFF
 # 비활성화된 창 (어두운 회색으로 설정)
-client.unfocused         #333333 #1e1e2e #a6adc8 #292d2e   #313244
+client.unfocused #333333 #333333 #333333 #333333 #333333
+
