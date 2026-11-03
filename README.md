@@ -16,7 +16,7 @@ zram-generator
 
 grim slurp wl-clipboard
 
-wofi
+wmenu j4-dmenu-desktop
 
 thunar gvfs 
 
