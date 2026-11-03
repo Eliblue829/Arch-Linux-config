@@ -25,6 +25,7 @@ foot
 fcitx5 fcitx5-configtool fcitx5-hangul
 
 sudo nvim /etc/environment
+(nvim :Ex)
 
 GTK_IM_MODULE=fcitx
 
