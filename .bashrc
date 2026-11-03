@@ -14,5 +14,6 @@ alias sps="sudo pacman -S"
 alias spr="sudo pacman -Rns"
 alias sw="sway --unsupported-gpu"
 alias pl="startplasma-wayland"
+export EDITOR="nvim"
 #pacman -Rns $(pacman -Qdtq)
 #pacman -Qe
