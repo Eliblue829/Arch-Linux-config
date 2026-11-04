@@ -1,5 +1,3 @@
-# output "*" bg "/home/dani/Downloads/mokyu.jpg" fill
-# bindsym $mod+e exec foot -e nvim ~/.config/sway/config
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -9,11 +7,10 @@ set $up k
 set $right l
 # Home row direction keys, like vim
 # Your preferred terminal emulator
-set $term foot
-# Your preferred application launcher
-set $menu wofi --show drun
+set $term alacritty
 set $browser firefox
 
+output "*" bg "/home/dani/Downloads/wall.png" fill
 output HDMI-A-1 mode 1920x1080@75.003Hz
 
 ### Idle configuration
@@ -58,7 +55,7 @@ output HDMI-A-1 mode 1920x1080@75.003Hz
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym Mod4+d exec j4-dmenu-desktop --dmenu="wmenu -i"
     bindsym $mod+b exec $browser
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -231,4 +228,3 @@ gaps outer 5
 client.focused #FFFFFF #FFFFFF #FFFFFF #FFFFFF #FFFFFF
 # 비활성화된 창 (어두운 회색으로 설정)
 client.unfocused #333333 #333333 #333333 #333333 #333333
-
