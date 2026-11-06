@@ -4,20 +4,19 @@ cfdisk
 mkfs.fat -F32 /dev/sda1
 mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
-mount --mkdir /dev/efi_system_partition /mnt/boot
-pacstrap -K /mnt base linux linux-firmware nano fastfetch
+mount --mkdir /dev/sda1 /mnt/boot
+pacstrap -K /mnt base linux linux-firmware nano fastfetch sudo intel-ucode
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot -S /mnt
 ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 hwclock --systohc
-systemctl enable --now systemd-timesyncd
+systemctl enable systemd-timesyncd
 nano /etc/locale.gen
 ko_KR.UTF-8
 locale-gen
 passwd
 useradd -m -G wheel -s /bin/bash dani
 passwd dani
-pacman -S sudo
 EDITOR=nano visudo
 su - dani
 bootctl install
@@ -35,4 +34,6 @@ linux   /vmlinuz-linux
 initrd  /intel-ucode.img       <-- 1등으로 실행되도록 맨 위에 배치!
 initrd  /initramfs-linux.img   <-- 메인 이미지는 그 아래에 배치!
 options root=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx rw
-pacman -S intel-ucode
+umount -R /mnt
+reboot
+
