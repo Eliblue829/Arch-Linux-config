@@ -1,61 +1,17 @@
 # Arch-Linux-config
 
-sway
-
-swaybg
-
-waybar
-
-dbus
-
-xdg-desktop-portal-wlr
-xdg-desktop-portal-gtk
-
-nwg-look
-
-xorg-xwayland
-
-zram-generator
-
-grim slurp wl-clipboard
-
-wmenu j4-dmenu-desktop
-
-thunar gvfs 
-
-foot
-
-fcitx5 fcitx5-configtool fcitx5-hangul
-
-sudo nvim /etc/environment
-(nvim :Ex)
-
+sway foot noto-fonts-cjk fcitx5 fcitx5-configtool fcitx5-hangul swaybg waybar dbus xdg-desktop-portal-wlr xdg-desktop-portal-gtk gamescope nwg-look xorg-xwayland zram-generator grim slurp wl-clipboard thunar gvfs 
+gnome-software mousepad polkit-gnome timeshift btop ncdu
+sudo nano /etc/environment
 GTK_IM_MODULE=fcitx
-
 QT_IM_MODULE=fcitx
-
 XMODIFIERS=@im=fcitx
-
-gamescope
 
 gamescope -W 1920 -H 1080 -f -- %command%
 
-gnome-software
-
-mousepad
-
-polkit-gnome 
-
-timeshift
-
-noto-fonts-cjk
-
 neovim
-
-ncdu
 
 yazi
 
-btop
 
 
