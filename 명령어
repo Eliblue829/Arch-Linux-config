@@ -6,20 +6,17 @@ mkfs.fat -F32 /dev/sda1
 mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 mount --mkdir /dev/sda1 /mnt/boot
-pacstrap -K /mnt base linux linux-firmware nano fastfetch sudo intel-ucode
+pacstrap -K /mnt base linux linux-firmware nano fastfetch sudo intel-ucode networkmanager
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot -S /mnt
 ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 hwclock --systohc
 systemctl enable systemd-timesyncd
-nano /etc/locale.gen
+nano /etc/locale.gen //주석 제거
 ko_KR.UTF-8
 locale-gen
+echo "LANG=ko_KR.UTF-8" >> /etc/locale.conf
 passwd
-useradd -m -G wheel -s /bin/bash dani
-passwd dani
-EDITOR=nano visudo
-su - dani
 bootctl install
 nano /boot/loader/loader.conf
 
@@ -29,12 +26,22 @@ console-mode max
 editor no
 
 blkid
+echo "options root=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx rw" >> /boot/loader/entries/arch.conf
 nano /boot/loader/entries/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /intel-ucode.img       <-- 1등으로 실행되도록 맨 위에 배치!
 initrd  /initramfs-linux.img   <-- 메인 이미지는 그 아래에 배치!
 options root=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx rw
+
+useradd -m -G wheel -s /bin/bash dani
+passwd dani
+EDITOR=nano visudo
+su - dani
+
+exit
 umount -R /mnt
 reboot
 
+sudo systemctl enable --now NetworkManager
+driver install (example: nvidia-open, mesa)
