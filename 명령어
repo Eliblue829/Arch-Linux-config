@@ -8,7 +8,7 @@ mount /dev/sda2 /mnt
 mount --mkdir /dev/sda1 /mnt/boot
 pacstrap -K /mnt base linux linux-firmware nano fastfetch sudo intel-ucode networkmanager
 genfstab -U /mnt >> /mnt/etc/fstab
-arch-chroot -S /mnt
+arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 hwclock --systohc
 systemctl enable systemd-timesyncd
