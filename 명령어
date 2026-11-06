@@ -44,4 +44,8 @@ umount -R /mnt
 reboot
 
 sudo systemctl enable --now NetworkManager
-driver install (example: nvidia-open, mesa)
+sudo pacman -S (driver install) (example: nvidia-open, mesa)
+
+(pipewire)
+wpctl status
+wpctl set-default <기기_ID>
