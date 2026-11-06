@@ -4,7 +4,7 @@ cfdisk
 mkfs.fat -F32 /dev/sda1
 mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
-mount --mkdir /dev/sda1 /mnt/efi
+mount --mkdir /dev/sda1 /mnt/boot
 pacstrap -K /mnt base linux linux-firmware nano fastfetch sudo intel-ucode
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot -S /mnt
@@ -19,7 +19,7 @@ useradd -m -G wheel -s /bin/bash dani
 passwd dani
 EDITOR=nano visudo
 su - dani
-bootctl --esp-path=/efi install
+bootctl install
 nano /boot/loader/loader.conf
 
 default arch.conf
