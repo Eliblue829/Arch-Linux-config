@@ -10,9 +10,10 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 alias up="sudo pacman -Syu; flatpak update"
 alias sps="sudo pacman -S"
-alias spr="sudo pacman -Rns"
+alias spr="sudo pacman -R"
 alias sw="sway --unsupported-gpu"
 alias pl="startplasma-wayland"
 alias al="/home/dani/Games/albion-online/data/launcher/Albion-Online"
-#pacman -Rns $(pacman -Qdtq)
+alias pr="sudo pacman -Rns $(pacman -Qdtq)"
 #pacman -Qe
+#source .bashrc
