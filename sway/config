@@ -7,10 +7,10 @@ set $up k
 set $right l
 # Home row direction keys, like vim
 # Your preferred terminal emulator
-set $term alacritty
+set $term foot
 set $browser firefox
 
-output "*" bg "/home/dani/Downloads/wall.png" fill
+output "*" bg "/home/dani/Downloads/archlinux.png" fill
 output HDMI-A-1 mode 1920x1080@75.003Hz
 
 ### Idle configuration
@@ -55,8 +55,9 @@ output HDMI-A-1 mode 1920x1080@75.003Hz
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym Mod4+d exec j4-dmenu-desktop --dmenu="wmenu -i"
+    bindsym Mod4+d exec env LANG=C.UTF-8 rofi -show drun
     bindsym $mod+b exec $browser
+    bindsym $mod+n exec flatpak run org.chromium.Chromium
     bindsym Mod4+e exec thunar
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -215,7 +216,8 @@ input "5426:138:Razer_Razer_Viper_Mini" {
 #스크린샷
 bindsym Print exec grim -g "$(slurp)" - | wl-copy
 #전원 끄기
-bindsym Ctrl+Alt+Delete exec systemctl poweroff
+bindsym Ctrl+Alt+Delete exec poweroff
+bindsym Ctrl+Alt+End exec reboot
 # 테두리
 default_border pixel 5
 
