@@ -14,6 +14,6 @@ alias spr="sudo pacman -R"
 alias sw="sway --unsupported-gpu"
 alias pl="startplasma-wayland"
 alias al="/home/dani/Games/albion-online/data/launcher/Albion-Online"
-alias pr="sudo pacman -Rns $(pacman -Qdtq)"
+alias pr="sudo pacman -Rns $(pacman -Qtdq)"
 #pacman -Qe
 #source .bashrc
