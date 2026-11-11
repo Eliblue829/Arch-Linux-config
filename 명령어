@@ -1,4 +1,4 @@
-sudo dd if=/home/dani/Downloads/archlinux-2026.11.01-x86_64.iso of=/dev/sdX bs=4M status=progress && sync
+sudo dd if=/home/dani/Downloads/archlinux-2026.11.01-x86_64.iso of=/dev/sdb bs=4M conv=fsync status=progress
 setfont -d
 lsblk
 cfdisk
