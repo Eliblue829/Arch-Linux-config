@@ -49,3 +49,52 @@ sudo pacman -S (driver install) (example: nvidia-open, mesa)
 (pipewire)
 wpctl status
 wpctl set-default <기기_ID>
+
+[dani@archlinux ~]$ pacman -Qe
+base 3-3
+base-devel 1-2
+btop 1.4.7-1
+dnsmasq 2.93-1
+fastfetch 2.71.0-1
+firefox 160.0-1
+flatpak 1:1.18.4-2
+foot 1.28.0-2
+gamescope 3.17.0-1
+git 2.56.0-2
+gnome-software 51.1-1
+grim 1.5.0-2
+gvfs 1.62.0-3
+intel-ucode 20260925-1
+kime 3.2.0-1
+linux 7.2.15.arch1-1
+linux-firmware 20261019-1
+linux-headers 7.2.15.arch1-1
+lutris 0.5.22-3
+mousepad 0.7.0-1
+nano 9.3-1
+ncdu 2.9.2-1
+networkmanager 1.58.1-3
+noto-fonts-cjk 20240730-1
+nvidia-open 615.78.08-6
+nwg-look 1.2.1-1
+pipewire-pulse 1:1.6.11-1
+polkit-gnome 0.105-12
+qemu-full 11.1.3-1
+rofi 2.1.0-1
+slurp 1.5.0-2
+steam 1.0.0.87-3
+sudo 1.9.17.p2-7
+sway 1:1.12-4
+swaybg 1.2.2-1
+thunar 4.20.10-1
+timeshift 26.09.0-1
+virt-manager 5.1.0-4
+virt-viewer 11.0-4
+waybar 0.16.0-1
+wl-clipboard 1:2.3.0-1
+xdg-desktop-portal-gtk 1.15.3-2
+xdg-desktop-portal-wlr 0.8.4-1
+xorg-xwayland 24.1.15-1
+yay 13.1.0-1
+yay-debug 13.1.0-1
+zram-generator 1.2.1-1
