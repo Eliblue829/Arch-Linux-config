@@ -1,4 +1,4 @@
-sudo dd if=/home/dani/Downloads/archlinux-2026.11.01-x86_64.iso of=/dev/sdb bs=4M conv=fsync status=progress
+sudo dd if=/home/dani/다운로드/Fedora-KDE-Desktop-Live-45-1.4.x86_64.iso of=/dev/sdb bs=4M conv=fsync status=progress
 setfont -d
 lsblk
 cfdisk
